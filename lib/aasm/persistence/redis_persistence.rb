@@ -11,7 +11,7 @@ module AASM
         # Initialize with default values
         #
         # Redis::Objects removes the key from Redis when set to `nil`
-        def initialize(*args)
+        def initialize(*args, **kwargs)
           super
           aasm_ensure_initial_state
         end
